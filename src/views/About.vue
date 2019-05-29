@@ -1,5 +1,20 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
-</template>;
+  <Checkbox v-model="checked"/>
+</template>
+
+<script>
+import { Checkbox } from 'vant';
+export default {
+  components: {
+    Checkbox
+  },
+  data() {
+    return {
+      checked: false
+    };
+  }
+};
+</script>
+
+<style lang="less">
+</style>
